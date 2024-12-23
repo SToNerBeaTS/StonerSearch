@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="de"> <!-- Legt die Sprache der Seite auf Deutsch fest -->
+<head>
+    <meta charset="UTF-8"> <!-- Legt die Zeichenkodierung auf UTF-8 fest (wichtig für Sonderzeichen) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Sorgt dafür, dass die Seite auf mobilen Geräten richtig skaliert wird -->
+    <title>StonerSearch</title> <!-- Der Titel der Webseite, der oben im Browser angezeigt wird -->
+    <script async src="https://cse.google.com/cse.js?cx=3771eaf05520a44cb"></script> <!-- Lädt das Google Custom Search Script -->
+    <style>
+        /* Gesamtes Styling der Seite */
+        body {
+            font-family: Arial, sans-serif; /* Schriftart für den Text */
+            background-color: #121212; /* Dunkler Hintergrund für die Seite */
+            color: #E0E0E0; /* Helle Textfarbe für besseren Kontrast */
+            margin: 0; /* Entfernt den Standardaußenabstand der Seite */
+            display: flex; /* Aktiviert das Flexbox-Layout für das gesamte Dokument */
+            flex-direction: column; /* Ordnet die Kinder-Elemente (header, main, footer) vertikal an */
+            min-height: 100vh; /* Stellt sicher, dass die Seite mindestens die gesamte Bildschirmhöhe einnimmt */
+        }
+        header {
+            background-color: #1A1A1A; /* Dunkler Hintergrund für den Header */
+            color: white; /* Textfarbe weiß */
+            padding: 10px; /* Innenabstand des Headers weiter reduziert */
+            text-align: center; /* Zentriert den Text im Header */
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Fügt einen etwas stärkeren Schatten unter dem Header hinzu */
+        }
+        .logo {
+            max-width: 300px; /* Maximale Breite des Logos */
+            width: 100%; /* Das Bild wird die volle Breite ausnutzen */
+            height: auto; /* Die Höhe wird proportional zur Breite skaliert */
+            object-fit: contain; /* Verhindert Verzerrungen und lässt das Bild innerhalb der verfügbaren Breite skaliert werden */
+            margin-top: 20px; /* Etwas Abstand nach oben */
+        }
+        main {
+            flex: 1; /* Lässt den Hauptinhalt den verbleibenden Platz einnehmen */
+            display: flex; /* Aktiviert Flexbox für den Hauptbereich */
+            flex-direction: column; /* Ordnet die Kinder-Elemente vertikal an */
+            justify-content: flex-end; /* Platziert den Inhalt (Suchleiste und Text) am unteren Rand */
+            align-items: center; /* Zentriert den Inhalt horizontal */
+            padding: 20px; /* Innenabstand im Hauptinhalt */
+        }
+        .gcse-search {
+            background-color: #333; /* Dunkler Hintergrund für das Suchfeld */
+            border-radius: 5px; /* Abgerundete Ecken für das Suchfeld */
+        }
+        footer {
+            text-align: center; /* Zentriert den Text im Footer */
+            background-color: #1A1A1A; /* Dunkler Hintergrund für den Footer */
+            color: white; /* Weiße Textfarbe */
+            padding: 10px 0; /* Innenabstand oben und unten, ohne seitlichen Abstand */
+            font-size: 14px; /* Schriftgröße im Footer */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Bild als Logo hinzufügen -->
+        <img src="https://i.imgur.com/bZCB18Z.png" alt="StonerSearch Logo" class="logo"> <!-- Dein Bild von Imgur -->
+    </header>
+    <main>
+        <div class="gcse-search"></div> <!-- Platzhalter für die Google-Suchleiste -->
+    </main>
+    <footer>
+        &copy; 2024 StonerSearch. Alle Rechte vorbehalten. <!-- Copyright-Text im Footer -->
+    </footer>
+</body>
+</html>
